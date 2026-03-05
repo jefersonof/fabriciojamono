@@ -1,0 +1,91 @@
+/* Botão Flutuante do WhatsApp*/
+.botao-wpp{ position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 30px;
+  right: 30px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 36px;
+  z-index: 1000;
+  animation: blink 1.5s infinite;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+    
+}
+
+/* Ícone centralizado */
+.botao-wpp {
+  line-height: 60px;
+}
+
+/* Efeito de piscar */
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+/*Botão chamada para o grupo de WhatsApp*/
+/*.btn-whatsapp-grupo {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #25D366;
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  animation: pulse 1.8s infinite;
+  transition: 0.3s ease-in-out;
+  z-index: 999;
+}*/
+
+.btn-whatsapp-grupo {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  background-color: #25D366;
+  color: #fff;
+  padding: 12px 22px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  animation: pulse 1.8s infinite;
+  transition: 0.3s ease-in-out;
+  z-index: 9999;
+}
+
+/* 🔥 Ajuste para celular */
+@media (max-width: 768px) {
+  .btn-whatsapp-grupo {
+    top: 10px;
+    right: 10px;
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+}
+
+.btn-whatsapp-grupo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Animação Pulse */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
