@@ -126,3 +126,9 @@
 .team-card:hover img{
     transform:scale(1.07);
 }
+
+.modal-content{
+border-radius:15px;
+}
+
+/*dar margem para o primeiro conteudo após o menu*/
